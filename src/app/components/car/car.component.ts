@@ -11,11 +11,7 @@ export class CarComponent implements OnInit {
 
   @Input() public car: Car;
 
-
   constructor() { }
 
-  ngOnInit() { 
-    console.log('CAR');
-    console.log(this.car);
-  }
+  ngOnInit() { }
 }

@@ -1,1 +1,10 @@
-<h1>DEtail cars</h1>
+<div class="container">
+  <div class="py-5">
+    <div class="content__car__detail">
+      <a class="btn btn-link" [routerLink]="['/home']"><u>Volver</u></a>
+      <img [src]="car.urlImg" [alt]="car.brand" class="w-100">
+      <h1 class="mt-3">{{car.brand}}</h1>
+      <p>{{car.description}}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+@import '../../../assets/styles/utils/mix/mixins.scss';
+
+.content__carousel .carousel-inner .carousel-item article img {
+  object-fit: cover;
+  height: 100%;
+}

@@ -4,9 +4,9 @@ import { DetailCarComponent } from './pages/detail-car/detail-car.component';
 import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
-  { path: "", component: HomeComponent },
+  { path: "home", component: HomeComponent },
   { path: "car/:id", component: DetailCarComponent },
-  { path: "**", redirectTo: "" },
+  { path: "**", redirectTo: "home" },
 ];
 
 @NgModule({
