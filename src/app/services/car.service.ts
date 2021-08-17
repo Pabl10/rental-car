@@ -34,8 +34,8 @@ export class CarService {
     },
     {
       id: 4,
-      brand: 'Mercedez',
-      year: 2018,
+      brand: 'Chevrolet',
+      year: 2016,
       color: 'Gray',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatum officia architecto sequi reiciendis adipisci ab expedita minima atque voluptas.',
       urlImg: 'https://cdn.pixabay.com/photo/2016/09/15/12/12/renault-clio-1671405_960_720.jpg'
@@ -46,11 +46,12 @@ export class CarService {
   constructor() { }
 
   public getCars(): Observable<Array<Car>> {
+    // return this.http.get(environment.apiBaseUrl, {params: params});
     return of(this.carArray);
   }
 
   public getCar(idCar: number): Observable<Car> {
-    let car: Car = this.carArray.find(car => car.id === Number(idCar)) || new Car();
+    let car: Car = this.carArray.find(car => car.id === idCar) || new Car();
     return of(car);
   }
 }

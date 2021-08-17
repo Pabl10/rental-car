@@ -21,7 +21,7 @@ export class DetailCarComponent implements OnInit {
 
   ngOnInit() { 
     this._route.params.subscribe(params => {
-      this.getCar(params.id);
+      this.getCar(Number(params.id));
     });
   }
 

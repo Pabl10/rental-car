@@ -1,7 +1,8 @@
 <div class="card content__card">
   <img [src]="car.urlImg" class="card-img-top" [alt]="car.brand">
   <div class="card-body text-center">
-    <h5 class="card-title">{{car.brand}} - {{car.year}}</h5>
+    <h5 class="card-title">{{car.brand}}</h5>
+    <h6>{{car.year}}</h6>
     <p class="card-text">{{car.description}}</p>
     <a class="btn btn__primary" [routerLink]="['/car/' + car.id]">More</a>
   </div>
