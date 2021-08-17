@@ -1,0 +1,10 @@
+<div class="row">
+  <ng-container *ngFor="let car of listCars | filterCar:txtCar">
+    <div class="col-md-6 col-lg-4 col-sm-6">
+      <car [car]="car"></car>
+    </div>
+  </ng-container>
+</div>
+<div class="alert alert-primary" role="alert" *ngIf="(listCars | filterCar : txtCar).length === 0">
+  There are no cars for this brand
+</div>

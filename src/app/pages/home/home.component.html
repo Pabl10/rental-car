@@ -1,0 +1,20 @@
+<navbar></navbar>
+<div class="content__banner">
+  <div class="content__banner__text__banner">
+    <h1 class="text-center">Rent your Dream Car</h1>
+    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatum officia architecto sequi reiciendis adipisci ab expedita minima atque voluptas, aliquid tenetur ipsa possimus itaque dignissimos</p>
+  </div>
+  <carousel></carousel>
+</div>
+<div class="container">
+  <div class="text-center my-3">
+    <h3>Best Cars in town for you</h3>
+    <p>Rent Cars</p>
+  </div>
+  <div class="pb-5">
+    <div class="mb-3 w-25">
+      <input type="text" class="form-control" placeholder="Search car for brand..." aria-label="car text" [(ngModel)]="txtCar">
+    </div>
+    <list-car [txtCar]="txtCar"></list-car>
+  </div>
+</div>
