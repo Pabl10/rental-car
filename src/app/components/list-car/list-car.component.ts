@@ -29,4 +29,9 @@ export class ListCarComponent implements OnInit {
       this.listCars = cars;
     });
   }
+
+  public sortBy(prop: string): Array<Car> {
+    return this.listCars.sort((a: any, b: any) => a[prop] > b[prop] ? 1 : a[prop] === b[prop] ? 0 : -1);
+
+  }
 }
